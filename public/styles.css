@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+body{
+    margin: 25px 0 25px 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9F9F9;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: thin;
+}
+
+.container{
+    width: 55%;
+    height: fit-content;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 3px 1px #E3E5E4;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+}
+
+.input{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #E6EEF4;
+    margin-right: 2%;
+}
+
+.container_span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_inputs{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-bottom: 4%;
+    margin-top: 1%;
+}
+
+.titulo_dados_os{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+input{
+    border: none;
+    outline: none;
+    width: 100px;
+    background-color: #E6EEF4;
+}
+
+select{
+    border: none;
+    outline: none;
+}
+
+.button{
+    cursor: pointer;
+    padding: 5px 15px 5px 15px;
+    font-size: 15px;
+    background-color:#ff984fb6;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 1px 1px #5050502c;
+    transition: 0.9s;
+    position: relative;
+    left: 0.5%;
+    margin-top: 25px;
+    margin-left: 4%;
+    color: #1f1f1f;
+}
+.button:hover{
+    background-color: #ffcf95;
+}
+
+.titulo{
+    width: 105.2%;
+    height: 104%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg,#00ACBB 0%, #00dac7 90%);
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    top: -30%;
+    left: -2.5%;
+}
+
+#button_etiqueta{
+    background-color: #ff6593b6;
+}
+#button_etiqueta:hover{
+    background-color: #ff8aadb6
+}
+
+#button_segvoos{
+    background-color: #87e78cb6;
+}
+#button_segvoos:hover{
+    background-color: #aaffaeb6;
+}
+
+select{
+    background-color: #E6EEF4;
+}
+
+.logo_amz{
+    position: absolute;
+    width: 50px;
+    z-index: 5;
+    background-color: #f9f9f97c;
+    padding: 9px;
+    border-radius: 5px;
+    top: 35px;
+}

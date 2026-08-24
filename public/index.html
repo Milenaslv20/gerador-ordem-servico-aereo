@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <title>Gerador de OS - CTM</title>
+</head>
+<body>
+    <div class="container">
+        <img src="logo_amz.png" class="logo_amz">
+        <span class="titulo">Gerador de OS - CTM</span>
+        <form action="/gerar-doc" method="POST">
+            <div class="container_span">
+                <span class="titulo_dados_os">Dados OS</span>
+            </div>
+            <div class="container_inputs">
+                <div class="input">
+                    <label>Número OS:</label>
+                    <input type="text" id="numeroOs" name="numeroOs" placeholder="Ex: 355">
+                </div>
+
+                <div class="input">
+                    <label>Data de emissão:</label>
+                    <input type="text" id="dataEmissao" name="dataEmissao">
+                </div>
+            </div>
+
+            <div class="container_span">
+                <span class="titulo_dados_os">Dados Aeronave</span>
+            </div>
+            <div class="container_inputs">
+                <div class="input">
+                    <label>Aeronave:</label>
+                    <select id="aeronave" name="aeronave">
+                        <option value="XXX">Selecione</option>
+                        <option>PP-ITZ</option>
+                        <option>PT-MET</option>
+                        <option>PP-AMV</option>
+                        <option>PP-AMX</option>
+                        <option>PR-ATA</option>
+                        <option>PP-SKT</option>
+                        <option>PR-VCE</option>
+                        <option>PS-AML</option>
+                        <option>PS-AMZ</option>
+                        <option>PR-CFJ</option>
+                        <option>PP-ITZ</option>
+                        <option>PT-MPB</option>
+                        <option>PS-AMY</option>
+                        <option>PS-AMS</option>
+                        <option>PR-TVN</option>
+                        <option>PT-DCR</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label>TSN:</label>
+                    <input type="text" id="tsn" name="tsn">
+                </div>
+
+                <div class="input">
+                    <label>CSN:</label>
+                    <input type="text" id="csn" name="csn">
+                </div>
+            </div>
+            
+            <div class="container_span">
+                <span class="titulo_dados_os">Horas motor</span>
+            </div>
+            <div class="container_inputs">
+                <div class="input">
+                    <label>TSN:</label>
+                    <input type="text" id="tsnMotor" name="tsnMotor">
+                </div>
+
+                <div class="input">
+                    <label>TSO:</label>
+                    <input type="text" id="tsoMotor" name="tsoMotor">
+                </div>
+
+                <div class="input">
+                    <label>CSN:</label>
+                    <input type="text" id="csnMotor" name="csnMotor">
+                </div>
+
+                <div class="input">
+                    <label>CSO:</label>
+                    <input type="text" id="csoMotor" name="csoMotor">
+                </div>                
+            </div>            
+
+            <div class="container_span">
+                <span class="titulo_dados_os">Horas hélice</span>
+            </div>
+            <div class="container_inputs">
+                <div class="input">
+                    <label>TSN:</label>
+                    <input type="text" id="tsnHelice" name="tsnHelice">
+                </div>
+
+                <div class="input">
+                    <label>TSO:</label>
+                    <input type="text" id="tsoHelice" name="tsoHelice">
+                </div>              
+            </div>
+
+            <div class="container_span">
+                <span class="titulo_dados_os">Itens</span>
+            </div>
+            <div class="container_inputs">
+                <div class="input">
+                    <label>Quant:</label>
+                    <input type="number" id="quantItens" name="quantItens" oninput="gerarCampos()">
+                </div>            
+            </div>
+
+            <div id="container_span"></div>
+
+            <button type="submit" name="acao" value="os" class="button" id="button_os">Gerar OS</button>
+            <button type="submit" name="acao" value="etiqueta" class="button" id="button_etiqueta">Gerar etiqueta</button>
+            <button type="submit" name="acao" value="segvooHsi" class="button" id="button_segvoos">Gerar Segvoo HSI</button>
+            <button type="submit" name="acao" value="segvooBicos" class="button" id="button_segvoos">Gerar Segvoo Bicos</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
