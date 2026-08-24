@@ -1,4 +1,4 @@
-# Gerador de Ordem de Servico Aéreo
+# Gerador de Ordem de Serviço Aéreo
 
 Sistema web para gerar Ordens de Serviço e documentos SEGVOO em formato `.docx` a partir dos dados da aeronave, motor, hélice e serviços necessários para realização.
 
