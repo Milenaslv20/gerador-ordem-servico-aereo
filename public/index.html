@@ -9,8 +9,10 @@
 </head>
 <body>
     <div class="container">
-        <img src="logo_ventosul.png" class="logo_empresa" alt="Vento Sul Táxi Aéreo">
-        <span class="titulo">Gerador de OS - CTM</span>
+        <header class="cabecalho">
+            <img src="logo_ventosul.png" class="logo_empresa" alt="Vento Sul Táxi Aéreo">
+            <span class="titulo">Gerador de OS - CTM</span>
+        </header>
         <form action="/gerar-doc" method="POST">
             <div class="container_span">
                 <span class="titulo_dados_os">Dados OS</span>
@@ -109,7 +111,7 @@
                 <span class="titulo_dados_os">Itens</span>
             </div>
             <div class="container_inputs">
-                <div class="input">
+                <div class="input input_quant">
                     <label>Quant:</label>
                     <input type="number" id="quantItens" name="quantItens" oninput="gerarCampos()">
                 </div>            
@@ -117,10 +119,12 @@
 
             <div id="container_span"></div>
 
-            <button type="submit" name="acao" value="os" class="button" id="button_os">Gerar OS</button>
-            <button type="submit" name="acao" value="etiqueta" class="button" id="button_etiqueta">Gerar etiqueta</button>
-            <button type="submit" name="acao" value="segvooHsi" class="button" id="button_segvoos">Gerar Segvoo HSI</button>
-            <button type="submit" name="acao" value="segvooBicos" class="button" id="button_segvoos">Gerar Segvoo Bicos</button>
+            <div class="container_botoes">
+                <button type="submit" name="acao" value="os" class="button" id="button_os">Gerar OS</button>
+                <button type="submit" name="acao" value="etiqueta" class="button" id="button_etiqueta">Gerar etiqueta</button>
+                <button type="submit" name="acao" value="segvooHsi" class="button" id="button_segvoos">Gerar Segvoo HSI</button>
+                <button type="submit" name="acao" value="segvooBicos" class="button" id="button_segvoos">Gerar Segvoo Bicos</button>
+            </div>
         </form>
     </div>
     <script src="script.js"></script>
